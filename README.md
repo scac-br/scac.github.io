@@ -1,2 +1,2 @@
-# sca-csbc2023
-Seminário de Ciência Aberta - Congresso da Sociedade Brasileira de Computação
+# SCAC
+Seminário de Ciência Aberta e Computação
