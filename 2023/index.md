@@ -42,8 +42,9 @@ program:
       '11:00', # painel
       '12:20', # encerramento
     ]
-  rooms:
-    - Sala A
+    roomless: {}
+    rooms:
+    - name: Sala A
   breaks:
     'Dia 1, 9:00': { title: '<a href="https://www.youtube.com/watch?v=anWIwZFHQQM"><i class="fa fa-video-camera"></i></a>&nbsp;Abertura' }
     'Dia 1, 10:30': { title: 'Intervalo' }
