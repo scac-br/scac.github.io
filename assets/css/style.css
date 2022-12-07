@@ -1,6 +1,6 @@
 .schedule-grid {
   display: grid;
-  grid-template-columns: 60px;
+  grid-template-columns: 60px repeat(var(--rooms), 1fr);
   gap: 4px;
   width: 100%;
 }
@@ -104,3 +104,4 @@ h1, h2, h3, h4, h5, h6 {
 .sibw {
   background-color: #d3e1f1;
 }
+
