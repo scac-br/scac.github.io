@@ -1,48 +1,599 @@
-<hr />
-<p>layout: 2023/event
-title: Seminário de Ciência Aberta
-main_page: true</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Custom CSS and script
+  ================================================== -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/script.js"></script>
 
-<p>logo: assets/images/logo-ic-2.png
-event_initials: Ciência Aberta @ SBC
-event_name: Seminário de Ciência Aberta
-date_and_place: ‘28 de julho de 2023.
-banner_image: assets/images/praca_das_artes.jpeg
-kickoff: { year: 2023, month: 7, day: 28, hour: 9, minute: 0 }
-about1:  BLA BLA
-about2: ‘BLA BLA BLA’
-schedule_preamble: ‘O evento conta com <b>N_TALKS apresentações</b>, divididas em <b>N_SESSIONS sessões</b> ao longo de <b>N_DAYS dias</b>.’ 
-latitude: -13.000013
-longitude: -38.507598
-building: Pavilhão de Aulas da<br />Federação II (PAF II), UFBA
-address: Tv. Barão de Jeremoabo - Ondina,<br />Salvador - BA, 40170-115
-staff:
-  ‘Comissão organizadora’:
-    - Christina von Flach
-    - xxxxx
-program:
-  days:</p>
-<ul>
-  <li>name: Dia 1
-date: 28 / 07 / 2023
-slots: [
-  ‘9:00’,
-  ‘10:00’, # coffee break
-  ‘S1/2’,
-  ‘10:30’, ‘10:45’, ‘11:00’, ‘11:15’, ‘11:30’, ‘11:45’, ‘12:00’,
-  ‘12:15’, # lunch break
-]
-rooms:
-    <ul>
-      <li>name: Sala A
-breaks:
-‘Dia 1, 9:00’: { title: ‘<a href="https://www.youtube.com/watch?v=anWIwZFHQQM"><i class="fa fa-video-camera"></i></a> Abertura (Sala A) [<a href="https://zenodo.org/record/7385493">slides</a>]’ }
-‘Dia 1, 10:00’: { title: ‘Intervalo’ }
-‘Dia 1, 12:15’: { title: ‘Pausa para almoço’ }
-sessions:
-‘Dia 1, Sala A, S1/2’: { name: ‘Sessão 1’, video: ‘https://www.youtube.com/watch?v=8AmXAu_FOLo’, chairs: [Apolinário], volunteers: [Airton] }
-talks:</li>
-    </ul>
-  </li>
-</ul>
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>I Seminário sobre Oportunidades e Desafios da Ciência Aberta na Computação</title>
 
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="I Seminário sobre Oportunidades e Desafios da Ciência Aberta na Computação">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Christina von Flach">
+  <meta name="generator" content="Themefisher Eventre HTML Template v1.0">
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="/theme/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="/theme/plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="/theme/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="/theme/plugins/slick/slick.css" rel="stylesheet">
+  <link href="/theme/plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="/theme/css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="/theme/images/favicon.png" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+
+  <!--========================================
+=            Navigation Section            =
+=========================================-->
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+  <div class="container-fluid p-0">
+    <!-- logo -->
+    <a class="p-2" href="index.html">
+      <img src="/assets/images/logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto"><li class="nav-item">
+          <a class="nav-link" href="/2023/#about">Sobre
+          <span>/</span>
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/2023/#speakers">Palestrantes
+          <span>/</span>
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/2023/#schedule">Programação
+          <span>/</span>
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/2023/#staff">Organização
+          
+          </a>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+
+<!--====  End of Navigation Section  ====-->
+  <!--============================
+=            Banner            =
+=============================-->
+
+<section class="banner bg-banner-one overlay" style="background: url(/assets/images/background-green.png) no-repeat;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Content Block -->
+				<div class="block">
+					<!-- Coundown Timer -->
+					<div class="timer"></div>
+					<h1>Ciência Aberta na Computação</h1>
+					<h3>I Seminário sobre Oportunidades e Desafios da Ciência Aberta na Computação</h3>
+					<h6>28 de julho de 2023</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!--====  End of Banner  ====-->
+
+  <!--===========================
+=            About            =
+============================-->
+
+<section class="section about" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<div class="image-block bg-about">
+					<img class="img-fluid" src="images/figabout.png" alt="">
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 align-self-center">
+				<div class="content-block">
+					<h2>Sobre</h2>
+					<div class="description-one">
+						<p>O Movimento de Ciência Aberta tem sido amplamente discutido pela comunidade científica internacional, porém ainda é pouco conhecido pela comunidade brasileira de Computação. O termo Ciência Aberta parte do pressuposto que a ciência é um bem comum, e que todos os insumos, processos e resultados associados a alguma atividade de pesquisa devem ser públicos e abertos a todos, respeitando-se restrições éticas e legais. A ideia principal é que a prática científica exige colaboração entre todos os atores envolvidos na atividade de pesquisa (pesquisadores, financiadores, legisladores, gestores, dentre outros). A colaboração se estende a toda a Sociedade, a principal beneficiária dos resultados do avanço no conhecimento científico.</p>
+					</div>
+					<div class="description-two">
+						<p>O objetivo principal da primeira edição do seminário Oportunidades e Desafios da Ciência Aberta na Computação é apresentar princípios, oportunidades e desafios da Ciência Aberta para a comunidade da SBC e discutir como a SBC pode contribuir para sua disseminação e implantação no Brasil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of About  ====-->
+
+  
+<!--==============================
+=            Speakers            =
+===============================-->
+
+<section class="section speakers white" id="speakers">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h2>Palestrantes</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-one.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 2 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-two.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 3 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-three.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 4 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-four.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Speakers  ====-->
+
+
+  <!--==============================
+=            Schedule            =
+===============================-->
+
+<section class="section schedule" id="schedule">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Programação</h2>
+					<p>O evento abc def gf mlslslslsls abanana, dldld e dkdkd.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center"><li class="nav-item">
+							<a class="nav-link active" href="#dia-1" data-toggle="pill">
+								Dia 1
+								<span>28 / 07 / 2023</span>
+							</a>
+						</li></ul>
+				</div>
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+
+						
+						<div class="tab-pane fade show active schedule-item" id="dia-1">
+
+							<div class="schedule-grid" style="--rooms: 2">
+								<div class="schedule-header">
+								<span class="col-time"></span><span class="col-room">Sala A</span></div><span class="time">9:00</span><span style="grid-column: 2 / span 1;" class="all-rooms"><a href="https://www.youtube.com/watch?v=anWIwZFHQQM"><i class="fa fa-video-camera"></i></a>&nbsp;Abertura</span><span class="time">P1</span><span>
+														<span><b>Palestra</b>&nbsp(<b>Chair</b>: A definir)
+														</span>
+													</span><span class="time">9:10</span><span class=""><a class="two-column" href="#" style="color: black;" data-toggle="modal" data-target="#dia-1-sala-a-9-10">
+														
+															<span>
+																<b>John Doe</b> - 
+																Ciência Aberta: Oportunidades e Desafios
+																
+															</span>
+														</a>
+
+														<!-- Modal -->
+														<div class="modal fade" id="dia-1-sala-a-9-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-lg" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title two-column" id="exampleModalLabel">
+																			
+																			<div>Ciência Aberta: Oportunidades e Desafios</div>
+																		</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<p><b>John Joe Doe</b></p>
+																		<p>Resumo: <span class="badge badge-secondary">Abstract 1 bla bla bla bla bla 1</span>
+																		<p>Bio: <span class="badge badge-secondary">John is gssgs sgs</span></p>
+																		
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</span><span class="time">P2</span><span>
+														<span><b>Palestra</b>&nbsp(<b>Chair</b>: A definir)
+														</span>
+													</span><span class="time">9:50</span><span class=""><a class="two-column" href="#" style="color: black;" data-toggle="modal" data-target="#dia-1-sala-a-9-50">
+														
+															<span>
+																<b>John Doe Jr</b> - 
+																Ciência Aberta e a P&D em Computação
+																
+															</span>
+														</a>
+
+														<!-- Modal -->
+														<div class="modal fade" id="dia-1-sala-a-9-50" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-lg" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title two-column" id="exampleModalLabel">
+																			
+																			<div>Ciência Aberta e a P&D em Computação</div>
+																		</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<p><b>John Joe Doe Junior</b></p>
+																		<p>Resumo: <span class="badge badge-secondary">Abstract 2 bla bla bla bla bla</span>
+																		<p>Bio: <span class="badge badge-secondary">John Junior is gssgs sgs</span></p>
+																		
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</span><span class="time">10:30</span><span style="grid-column: 2 / span 1;" class="all-rooms">Intervalo</span><span class="time">P3</span><span>
+														<span><b>Painel</b>&nbsp(<b>Chair</b>: Claudia)
+														</span>
+													</span><span class="time">11:00</span><span class=""><a class="two-column" href="#" style="color: black;" data-toggle="modal" data-target="#dia-1-sala-a-11-00">
+														
+															<span>
+																<b>John Doe III, Mary Doe, Peter Doe</b> - 
+																Ciência Aberta e a SBC 
+																
+															</span>
+														</a>
+
+														<!-- Modal -->
+														<div class="modal fade" id="dia-1-sala-a-11-00" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog modal-lg" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title two-column" id="exampleModalLabel">
+																			
+																			<div>Ciência Aberta e a SBC </div>
+																		</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<p><b>John Joe Doe III, Mary Doe, Peter Doe</b></p>
+																		<p>Resumo: <span class="badge badge-secondary">Este painel ... bla bla bla bla bla</span>
+																		<p>Bio: <span class="badge badge-secondary"></span></p>
+																		
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</span><span class="time">12:20</span><span style="grid-column: 2 / span 1;" class="all-rooms"><a href="https://www.youtube.com/watch?v=anWIwZFHQQM"><i class="fa fa-video-camera"></i></a>&nbsp;Encerramento</span></div>
+					  </div>
+						
+
+					</div>
+					<div class="legend"></div>
+				</div>
+				
+			</div>
+		</div>
+
+		<p></p>
+	</div>
+</section>
+
+<!--====  End of Schedule  ====-->
+
+  
+<!--==============================
+=            Staff               =
+===============================-->
+
+<section class="section speakers white">
+	<div class="container" id="staff">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h2>Organização</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-one.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Christina von Flach Garcia Chavez</a></h5>
+						<p>UFBA</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 2 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-two.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Claudia Maria Bauzer Medeiros</a></h5>
+						<p>UNICAMP</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 3 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-three.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>UEM</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 4 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/speaker-four.jpg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Johnathan Franco</a></h5>
+						<p>UFABC</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Staff  ====-->
+
+
+
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<!-- <footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <div class="footer-logo">
+            <img src="/assets/images/logo.png" alt="logo" class="img-fluid">
+          </div> -->
+<!-- 
+          <ul class="social-links-footer list-inline">
+            <li class="list-inline-item">
+              <a href="https://themefisher.com/"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://themefisher.com/"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://themefisher.com/"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://themefisher.com/"><i class="fa fa-rss"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://themefisher.com/"><i class="fa fa-vimeo"></i></a>
+            </li>
+          </ul>
+           -->
+        <!-- </div>
+
+      </div>
+    </div>
+  </div>
+</footer> -->
+<!-- Subfooter -->
+<footer class="subfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <div class="copyright-text">
+          <p>CSBC &copy; 2023, Based on Eventre theme from <a href="https://themefisher.com/">Themefisher</a></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- JAVASCRIPTS -->
+  <!-- jQuery -->
+  <script src="/theme/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="/theme/plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Shuffle -->
+  <script src="/theme/plugins/shuffle/shuffle.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="/theme/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="/theme/plugins/slick/slick.min.js"></script>
+  <!-- SyoTimer -->
+  <script src="/theme/plugins/syotimer/jquery.syotimer.min.js"></script>
+  <!-- Google Mapl -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT3n08zL1lwSYiEjfIEWFbcbCwSsXMSM"></script>
+  <script src="/theme/plugins/google-map/gmap.js"></script>
+  <!-- Custom Script -->
+  <script src="/theme/js/script.js"></script>
+
+  <script>
+    // -----------------------------
+    //  Count Down JS
+    // -----------------------------
+    $('.timer').syotimer({
+      year: 2023,
+      month: 7,
+      day: 28,
+      hour: 9,
+      minute: 0,
+      lang: 'por'
+    });
+  </script>
+</body>
+</html>

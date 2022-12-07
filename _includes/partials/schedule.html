@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="section-title">
-					<h3>Programação do Evento</h3>
+					<h2>Programação</h2>
 					<p>{{ page.schedule_preamble | replace: 'N_TALKS', page.program.talks.size | replace: 'N_SESSIONS', page.program.sessions.size | replace: 'N_DAYS', page.program.days.size }}</p>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 															{%- endif -%}
 															<b>{{ session.name }}</b>
 															{%- if session.chairs -%}
-															<b>. Chair{% if n_chairs > 1 %}s{% endif %}</b>: {{ session.chairs | join: ', ' }}
+															&nbsp(<b>Chair{% if n_chairs > 1 %}s{% endif %}</b>: {{ session.chairs | join: ', ' }})
 															{%- endif -%}
 															{%- if session.volunteers -%}
 															<b>. Apoio</b>: {{ session.volunteers | join: ', ' }}
@@ -79,7 +79,6 @@
 												{%- elsif talk -%}
 													<span class="{{ talk.topic_abbr | default: ''}}">
 														{%- capture talk_id -%}{{ day.name | append: '-' | append: room.name | append: '-' | append: slot | slugify }}{%- endcapture -%}
-														
 														<a class="two-column" href="#" style="color: black;" data-toggle="modal" data-target="#{{ talk_id }}">
 														{% if talk.presenter_photo and talk.presenter_photo != '' %}
 															<img src="photos/{{ talk.presenter_photo }}" alt="{{ talk.presenter }}" class="presenter-photo small">
@@ -108,8 +107,8 @@
 																	</div>
 																	<div class="modal-body">
 																		<p><b>{{ talk.presenter }}</b></p>
-																		<p>Orientação: {{ talk.advisor }}{% if talk.coadvisor and talk.coadvisor != '' %}, {{ talk.coadvisor }} {% endif %}</p>
-																		<p>Tópico: <span class="badge badge-secondary">{{ talk.topic }}</span>
+																		<p>Resumo: <span class="badge badge-secondary">{{ talk.abstract }}</span>
+																		<p>Bio: <span class="badge badge-secondary">{{ talk.bio }}</span>
 																		{%- if talk.doi %}
 																		Slides: <a href="https://doi.org/{{ talk.doi }}"><img src="https://zenodo.org/badge/DOI/{{ talk.doi }}.svg" alt="DOI"></a>
 																		{%- endif -%}
@@ -117,7 +116,6 @@
 																		Vídeo: <a href="{{ talk.video }}"><i class="fa fa-video-camera"></i></a>
 																		{%- endif -%}
 																		</p>
-																		<div>{{ talk.abstract }}</div>
 																		{% for tag in talk.tags %}
 																		<span class="badge badge-secondary">{{ tag }}</span>
 																		{% endfor %}

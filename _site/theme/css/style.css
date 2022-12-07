@@ -8,7 +8,7 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -248,7 +248,7 @@ button:hover {
 }
 
 .bg-schedule {
-  background: url(../images/background/schedule-bg.png) no-repeat;
+  /* background: url(../images/background/schedule-bg.png) no-repeat; */
   background-size: cover;
 }
 
@@ -292,7 +292,7 @@ button:hover {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 .border-less {
@@ -995,7 +995,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 @media (max-width: 767px) {
   .banner .block h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 400px) {
@@ -1125,14 +1125,13 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 20px;
 }
 .about .content-block .description-one p {
-  color: #222222;
   font-size: 1.0625rem;
 }
 .about .content-block .description-two {
   margin-bottom: 30px;
 }
 .about .content-block .description-two p {
-  font-size: 0.9375em;
+  font-size: 1.0625em;
 }
 @media (max-width: 575px) {
   .about .content-block ul.list-inline .list-inline-item {
@@ -1319,7 +1318,7 @@ select.form-control:not([size]):not([multiple]) {
 .schedule .schedule-contents {
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 30px;
+  padding: 0px;
 }
 .schedule .schedule-contents .schedule-item ul {
   margin-bottom: 0;
@@ -2408,8 +2407,8 @@ select.form-control:not([size]):not([multiple]) {
   z-index: 100;
 }
 @media (max-width: 1024px) {
-  .speakers-full-width .speaker-slider .slick-prev,
-  .speakers-full-width .speaker-slider .slick-next {
+.speakers-full-width .speaker-slider .slick-prev,
+.speakers-full-width .speaker-slider .slick-next {
     height: 35px;
     width: 35px;
   }
@@ -2538,7 +2537,7 @@ select.form-control:not([size]):not([multiple]) {
 @media screen and (min-width: 1200px) {
   .gallery-wrapper.less-gutter .mix,
   .gallery-wrapper.less-gutter .gap {
-    width: calc(25% - 0.75rem);
+     width: calc(25% - 0.75rem);
   }
 }
 
@@ -3168,3 +3167,8 @@ ul.pagination .active a {
   margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.about {
+  padding-bottom: 0px;
+}
+
