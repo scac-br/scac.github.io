@@ -1,6 +1,6 @@
 .schedule-grid {
   display: grid;
-  grid-template-columns: 60px repeat(var(--rooms), 1fr);
+  grid-template-columns: 60px;
   gap: 4px;
   width: 100%;
 }
